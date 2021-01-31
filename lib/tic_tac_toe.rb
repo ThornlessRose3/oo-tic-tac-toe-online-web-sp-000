@@ -106,10 +106,15 @@ class TicTacToe
   end
   
   def over?
-  
+    if self.won? || self.draw? || self.full?
+      return true
+    else
+      return nil
+    end
   end
 
   def winner
+    
     
   end
   
