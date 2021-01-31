@@ -114,7 +114,7 @@ class TicTacToe
   end
 
   def winner
-    if selfwon? 
+    if self.won? 
       WIN_COMBINATIONS.each do |win_combination|
         win_index1 = win_combination[0]
         win_index2 = win_combination[1]
