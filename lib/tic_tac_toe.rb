@@ -68,8 +68,8 @@ class TicTacToe
   end
   
   def won?
+    result = nil
     WIN_COMBINATIONS.each do |win_combination|
-      result = nil
       win_index1 = win_combination[0]
       win_index2 = win_combination[1]
       win_index3 = win_combination[2]
