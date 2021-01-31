@@ -18,14 +18,7 @@ class TicTacToe
     @board = board || Array.new(9, " ")
   end
  
-  def current_player
-    turn_count % 2 == 0 ? "X" : "O"
-  end
- 
-  def turn_count
-    @board.count{|token| token == "X" || token == "O"}
-  end
- 
+
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
@@ -38,5 +31,51 @@ class TicTacToe
     
   end
   
+  def move
+    
+  end
   
+  def position_taken?
+  
+  end
+  
+  def valid_move?
+    
+  end
+  
+  def turn_count
+    @board.count{|token| token == "X" || token == "O"}
+  end
+  
+  def current_player
+    turn_count % 2 == 0 ? "X" : "O"
+  end
+  
+  def turn
+  
+  end
+  
+  def won?
+    
+  end
+  
+  def full?
+    
+  end
+  
+  def draw?
+    
+  end
+  
+  def over?
+  
+  end
+
+  def winner
+    
+  end
+  
+  def play
+  end
+
 end
