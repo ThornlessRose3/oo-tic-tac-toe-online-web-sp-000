@@ -39,8 +39,9 @@ class TicTacToe
      !(@board[index] == " " || board[index].nil?)
   end
   
+  ## this is broken
   def valid_move?(index)
-    if index.between(0,8)
+    if index.between?(0,8)
       return !(self.position_taken?(index))
     else
       FALSE
