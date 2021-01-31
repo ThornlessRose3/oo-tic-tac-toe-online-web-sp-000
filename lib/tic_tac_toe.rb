@@ -76,7 +76,7 @@ class TicTacToe
       position_2 = @board[win_index2]
       position_3 = @board[win_index3]
       if position_1 == position_2 && position_2 == position_3 && position_taken?(win_index1)
-        return true
+        return win_combbination
       end
     end
     nil
