@@ -84,7 +84,15 @@ class TicTacToe
   end
   
   def full?
-    
+    i = 0
+    while i < 9
+      if self.position_taken?(i)
+      else
+        return nil
+      end
+    i += 1
+    end
+    self.position_taken?(0)
   end
   
   def draw?
