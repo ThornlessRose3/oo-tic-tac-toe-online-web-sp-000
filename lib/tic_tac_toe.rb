@@ -131,6 +131,15 @@ class TicTacToe
   end
   
   def play
+    until self.over?
+      self.turn
+    end
+  
+    if self.won?
+      puts "Congratulations " + winner(board) + "!"
+    elsif self.draw?
+      puts "Cat's Game!"
+    end
   end
 
 end
